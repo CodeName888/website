@@ -1,9 +1,9 @@
 {
     "apk": {
-        "version": "1.0.0+5",
+        "version": "1.0.0+6",
         "versionName": "1.0.0",
-        "versionCode": "5",
-        "filename": "test_1.0.0+5.apk",
+        "versionCode": "6",
+        "filename": "test_1.0.0+6.apk",
         "fileSize": "33.21 MB",
         "md5": "595cc66d2b1a12c682e8d28152a09cd0",
         "updateTime": "",
