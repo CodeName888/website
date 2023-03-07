@@ -14,8 +14,8 @@
 			<div id="dv-avatar" class="dv-avatar"></div>
 			<div id="user1"></div>
 		</div>
-		<div class="desc"><span class="gray">邀请您下载</span><i class="logo"></i><span>优办</span></div>
-		<div class="dont">Hi，我是你的同事，我们正在用优办，快下载吧！<br/>以后我们就可以在优办上沟通工作了!</div>
+		<div class="desc"><span class="gray">邀请您下载</span><i class="logo"></i><span>橘宝堂</span></div>
+		<div class="dont">Hi，xxx，我们正在用橘宝堂，快下载吧！<br/>以后我们就可以xxx了!</div>
 	</div>
 	<div id="operate">
 	<a id="download" href="#">立即下载</a>
@@ -89,5 +89,25 @@
 		      document.getElementById('avatar').style.display="none"
 		  }
 	</script>
+	<script>
+        function getJsonHttpUtil(reqUrl) {
+            return new Promise((resolve, reject) => {
+                const url = `${reqUrl}?v=${Date.now()}`;/*json文件url*/
+                const request = new XMLHttpRequest();
+                request.open("get", url);/*设置请求方法与路径*/
+                request.send(null);/*不发送数据到服务器*/
+                request.onload = () => {/*XHR对象获取到返回信息后执行*/
+                    if (request.status === 200) {/*返回状态为200，即为数据获取成功*/
+                        const json = JSON.parse(request.responseText);
+                        resolve(json);
+                    }
+                }
+            })
+        }
+		getJsonHttpUtil(`../../test/latest_version.json`).then(res => {
+			var item = res['apk'];
+			document.getElementById('download').setAttribute('href', '../../test/'+item.version+'/'+ item.filename);
+		});
+    </script>
 </body>
 </html>
