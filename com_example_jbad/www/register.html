@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>liliApp下载</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
+
+</head>
+
+<body>
+
+    <div class="registerWrap row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="page-header">
+                <h1>高品质&nbsp;&nbsp;&nbsp;&nbsp;高返佣</h1>
+                <p>注册即可享受100%返佣，最高可享受200%返佣</p>
+                <img src="./images/register.png" alt="">
+            </div>
+            <div class="page-content col-md-6 col-md-offset-3">
+                <p>注册liil账号</p>
+                <form action="" style="margin: 0 auto;max-width: 520px;width: 88%;">
+                    <div class="form-item">
+                        <img src="./images/phone.png" alt="">
+                        <input type="text" placeholder="请输入手机号码" class="userName">
+                    </div>
+                    <div class="form-item">
+                        <img src="./images/code.png" alt="">
+                        <input type="text" placeholder="请输入手机验证码" class="code">
+                        <a type="button" class="getCode" onclick="getCode()">获取验证码</a>
+                    </div>
+                    <a type="submit" class="submit btn btn-default" onclick="register()">立即注册</a>
+                </form>
+            </div>
+            <div class="page-foot col-md-6 col-md-offset-3">
+                已有账号？<a href="./download.jsp">立即下载app</a>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-2.1.1.js"></script>
+    <script src="./js/register.js"></script>
+
+</body>
+
+</html>

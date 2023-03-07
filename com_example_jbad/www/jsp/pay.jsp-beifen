@@ -1,0 +1,109 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: 75461
+  Date: 2019/1/23
+  Time: 14:20
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lili支付</title>
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+<body>
+<div class="pagewrap">
+    <img src="./images/MemberRecruitment.png" alt="">
+    <img src="https://liil-images.oss-cn-shanghai.aliyuncs.com/base_image/liil_head.png" alt="" class="memberImg">
+    <!-- <p class="memberName">v587</p> -->
+    <p class="greyColor">我是赚赚熊小主,我为赚赚熊代言</p>
+    <img src="./images/img.png" alt="">
+    <div class="giftPackage box">
+        <div class="header flexSta">
+            <img src="./images/box.png" alt="">
+            <span><label class="gradeName"></label>礼包</span>
+        </div>
+        <div class="body greyColor flexSta">
+            <img src="./images/present.png" alt="">
+            <ol class="content">
+                <li>1.购买<label class="gradeName"></label>礼包获得价值<label class="giftPrice"></label>的礼品兑换券一张。</li>
+                <li>2.礼品券可在商城兑换指定任意一份礼品。</li>
+                <li>3.礼品券兑换成功后,不可退换。</li>
+            </ol>
+        </div>
+    </div>
+    <div class="interest box">
+        <div class="header flexSta">
+            <img src="./images/ward.png" alt="">
+            <span><label class="gradeName"></label>权益</span>
+        </div>
+        <div class="body greyColor">
+            <ul class="content listGradeDetails">
+                <!-- <li class="flexSta">
+                    <img src="./images/money.png" alt="">
+                    <p>
+                        <span class="small">特权奖励</span>
+                        <span class="greyColor">可获得99枚通证金币、99元代金券、100元超值礼包！</span>
+                    </p>
+                </li> -->
+                <!-- <li class="flexSta">
+                    <img src="./images/pay.png" alt="">
+                    <p>
+                        <span class="small">会员价</span>
+                        <span class="greyColor">全城商品尽享利润50%优惠！</span>
+                    </p>
+                </li>
+                <li class="flexSta">
+                    <img src="./images/wallet.png" alt="">
+                    <p>
+                        <span class="small">轻松赚佣</span>
+                        <span class="greyColor">共享商城，一键转发，好友购买即可享有利润50%返佣！</span>
+                    </p>
+                </li>
+                <li class="flexSta">
+                    <img src="./images/reward.png" alt="">
+                    <p>
+                        <span class="small">团队奖励</span>
+                        <span class="greyColor">推荐好友购买会员，领取奖金，开启<label class="gradeName"></label>团队奖励能量柱！</span>
+                    </p>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="buyForm box">
+        <div class="header flexSta">
+            <img src="./images/crown.png" alt="">
+            <span><label class="gradeName"></label>购买(<a href="http://app.lilivip.com/shop-api/download.html">下载APP</a>)</span>
+        </div>
+        <div class="body">
+            <p class="price flexSta">
+                <span><label class="gradeName"></label>价格</span>
+                <span class="gradePrice">0</span>
+            </p>
+            <form action="">
+                <div class="form-item">
+                    <img src="./images/phone.png" alt="">
+                    <input type="text" placeholder="请先输入手机号码" class="userName">
+                </div>
+                <div class="form-item">
+                    <img src="./images/code.png" alt="">
+                    <input type="text" placeholder="请输入手机验证码" class="code">
+                    <a type="button" class="getCode" onclick="getCode()">获取验证码</a>
+                </div>
+                <a type="button" class="payBtn disabledPay" disabled="true" onclick="register()">立即支付</a>
+            </form>
+            <p class="greyColor small" style="text-align:center;margin-top:10px">注：如您还不是狸狸用户支付成功后将自动为您进行注册</p>
+        </div>
+    </div>
+
+
+</div>
+<script src="./js/jquery-2.1.1.js"></script>
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script src="./js/liliPay.js"></script>
+</body>
+</html>

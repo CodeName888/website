@@ -1,0 +1,322 @@
+.page-header {
+    margin-top: 0px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+
+}
+
+.isFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.isFlex img {
+    display: inline-block;
+    width: 15px;
+    cursor: pointer;
+}
+
+.isFlex span {
+    flex: 1;
+    text-align: center;
+}
+
+.page-content {
+    margin: 0 auto;
+    text-align: center;
+    /* padding-bottom: 20px; */
+}
+
+.page-content img {
+    display: inline-block;
+    width: 160px;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+.page-content .large-font {
+    font-size: 40px;
+    letter-spacing: 10px;
+    line-height: 1.2em;
+    color: #000;
+    text-shadow: none;
+    margin-bottom: 5px;
+}
+
+.page-content .large-font:nth-child(3) {
+    letter-spacing: 3px;
+    font-weight: normal
+}
+
+.page-content p {
+
+    font-family: "Microsoft YaHei";
+    color: rgb(255, 255, 255);
+
+    display: inline-block;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+
+.page-foot .btn img {
+    width: 22px;
+    margin-right: 10px;
+}
+
+.page-foot .btn {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    width: 80%;
+    max-width: 680px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+
+
+}
+
+.page-foot .anzuo-btn {
+    background-color: #191d21;
+    border: 0.5px solid #fff;
+    color: #fff;
+}
+
+.page-foot .pg-btn {
+    background-color: #fff;
+    border: 0.5px solid #191d21;
+    color: #191d21
+}
+
+.page-foot {
+    text-align: center;
+    margin: 50px auto;
+}
+
+body {
+    /* display: inline-block; */
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 560px;
+    height: 100%;
+    background-color: #e9754c;
+    letter-spacing: 3px;
+    color: #fff;
+    /* overflow: hidden; */
+
+}
+
+body .page-header {
+    margin-bottom: 0;
+    border: none;
+}
+
+body .page-header p {
+    font-size: 18px;
+    font-family: "Adobe Heiti Std";
+    line-height: 3;
+    margin: 0;
+}
+
+body .page-content h2 {
+    background-color: transparent;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: "FZZYK";
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+    margin: 0 0 0.5em;
+}
+
+body .form-item img {
+    width: 14px;
+    margin: 0 2px 0 4px;
+    vertical-align: middle;
+}
+
+body .form-item input {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    width: calc(100% - 50px);
+    background-color: #e9754c;
+    line-height: 1.2;
+    font-size: 1rem;
+    color: #fff;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #fff;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #fff;
+}
+
+body .form-item {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border: 0.5px solid #ccc;
+    position: relative;
+}
+
+.getCode {
+    display: flex;
+    align-items: center;
+    color: #000;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #fff;
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    font-weight: bold;
+}
+
+
+
+body .page-foot {
+    margin: 40px auto;
+    font-size: 12px;
+}
+
+
+
+/* reset */
+h1 {
+    color: #fff;
+    text-shadow: rgb(161, 60, 24) 0.1em 0.1em 0.2em;
+    font-family: "FZZYK";
+    line-height: 1.2;
+    font-size: 46px;
+
+}
+
+@font-face {
+    font-family: 'FZZYK';
+    src: url('../font/FZZYJW.eot');
+    src: url('../font/FZZYJW.woff') format('woff'),
+        url('../font/FZZYJW.TTF') format('truetype'),
+        url('../font/FZZYJW.svg') format('svg');
+}
+
+.colorBtn {
+    width: 64%;
+    margin: 22px auto;
+    padding: 10px 0;
+    font-size: 18px;
+    font-family: "Adobe Heiti Std";
+    letter-spacing: 3px;
+    font-weight: bold;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+    /* ef7e3e  f27b21 */
+    background: -webkit-linear-gradient(rgb(255, 155, 0), rgb(234, 66, 0));
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(rgb(255, 155, 0), rgb(234, 66, 0));
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(rgb(255, 155, 0), rgb(234, 66, 0));
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(rgb(255, 155, 0), rgb(234, 66, 0));
+    /* 标准的语法 */
+}
+
+.page-foot img {
+    width: 50%;
+}
+
+.download .page-content p {
+    background-color: #585c64;
+    display: inline-block;
+    width: 225px;
+    color: #ffeabf;
+    font-size: 14px;
+    border-radius: 2px;
+    line-height: 30px;
+    letter-spacing: 6px;
+    margin-top: 10px;
+}
+
+/* 警告框 */
+.alert {
+    width: 80%;
+    font-size: 20px;
+    max-width: 480px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: #EBEEF5; */
+    position: fixed;
+    left: 50%;
+    top: 20px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    /* background-color: #edf2fc; */
+    -webkit-transition: opacity .3s, top .4s, -webkit-transform .4s;
+    transition: opacity .3s, top .4s, -webkit-transform .4s;
+    transition: opacity .3s, transform .4s, top .4s;
+    transition: opacity .3s, transform .4s, top .4s, -webkit-transform .4s;
+    padding: 8px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    /* align-items: center; */
+    z-index: 2000;
+}
+
+#alertWarning,
+#alertSuccess,
+#alertDefault {
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 1;
+    display: none;
+}
+
+#alertSuccess {
+    background-color: #f0f9eb;
+    border-color: #e1f3d8;
+    color: #67C23A;
+}
+
+#alertWarning {
+    background-color: #fdf6ec;
+    border-color: #faecd8;
+    color: #F56C6C;
+}
+
+#alertDefault {
+    color: #909399;
+    border-color: #EBEEF5;
+    background-color: #edf2fc;
+}

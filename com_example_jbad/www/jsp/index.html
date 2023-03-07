@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test</title>
+</head>
+<body>
+<div>
+<span id="copyMy"> 复制我试试</span>
+<button onClick="copyFn()">点击复制</button>
+</div>
+
+<script>
+function copyFn(){
+var val = document.getElementById('copyMy');
+window.getSelection().selectAllChildren(val);
+document.execCommand ("Copy");
+
+}
+</script>
+</body>
+</html>
