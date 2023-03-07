@@ -83,7 +83,7 @@ function register() {
                 console.log(data)
                 if (data.code == 200) {
                     alert("恭喜您已成功注册赚赚熊会员");
-                    window.location.href = "../../shop-api/download.jsp"
+                    window.location.href = "../../shop-api/download.html"
                 } else {
                     alert(data.message);
                 }

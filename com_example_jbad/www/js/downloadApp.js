@@ -14,7 +14,7 @@ window.onload = function () {
     var isWeiXin = navigator.userAgent.toLowerCase().indexOf('micromessenger')
         != -1;
     if (isWeiXin) {
-        document.getElementById("androidUrl").setAttribute('href', "https://a.app.qq.com/o/simple.jsp?pkgname=com.liil.liilapp");
+        document.getElementById("androidUrl").setAttribute('href', "https://a.app.qq.com/o/simple.html?pkgname=com.liil.liilapp");
         // var htmlStr = '<div  style="margin:200px auto;width:100%;text-align:center;line-height:1.8">'
         //     + '<img style="width:100px;height: 100px;" src="./images/zhuanzhuanxiong.png"  alt="">'
         //     + '<h3>赚赚熊提醒您</h3>' +

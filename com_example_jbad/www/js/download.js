@@ -87,7 +87,7 @@ function register() {
             success: function (data) {
                 if (data.code == 200) {
                     message("恭喜您已成功注册赚赚熊会员", 1);
-                    window.location.href = "downloadApp.jsp"
+                    window.location.href = "downloadApp.html"
                 } else {
                     message(data.message, 0);
                 }

@@ -11,9 +11,9 @@ var timer;
 
 function getReplaceUrl() {
   var redirect_uri = encodeURIComponent(
-    // "http://192.168.1.224:8080/shop-api/index.jsp?gradeId=" +
+    // "http://192.168.1.224:8080/shop-api/index.html?gradeId=" +
     // gradeId + "&inviteCode=" + inviteCode);
-  "http://test.tmabt.com/shop-api/index.jsp?gradeId="
+  "http://test.tmabt.com/shop-api/index.html?gradeId="
   + gradeId + "&inviteCode=" + inviteCode);
   console.log("url===" + redirect_uri);
   return "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx49f1b0d55f0fa4cf&response_type=code" +
