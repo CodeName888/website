@@ -1,0 +1,7 @@
+on:
+  push:
+    paths-ignore:
+      - 'README.md'
+      - 'backup/**'
+      - '**/*.draft.md'
+      - '**/latest_version.json'
