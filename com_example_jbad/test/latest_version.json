@@ -1,11 +1,11 @@
 {
     "apk": {
-        "version": "1.0.0+20",
+        "version": "1.0.0+23",
         "versionName": "1.0.0",
-        "versionCode": "20",
-        "filename": "test_1.0.0+20.apk",
-        "fileSize": "32.86 MB",
-        "md5": "6499da0a577c4a24487f505ffb07d074",
+        "versionCode": "23",
+        "filename": "test_1.0.0+23.apk",
+        "fileSize": "33.12 MB",
+        "md5": "22aec7ad90985dc7ab1ff495bf5ace99",
         "updateTime": "",
         "=====================================================": "以下为升级信息",
         "introduce": "欢迎使用！\n1. 优化内容展示,优化内容展示,优化内容展示,优化内容展示,优化内容展示。\n2. 增强了操作体验；使用体验更佳；\n3. 修复了其他已知问题。",
