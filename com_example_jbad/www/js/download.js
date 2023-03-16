@@ -2,6 +2,7 @@ var mobile = "";
 var inviteCode = "";
 var timer;
 var timeout;
+var host = ''; // ..shop-api
 
 /**
  * 获取验证码
@@ -12,7 +13,7 @@ function getCode() {
         if (isTelOrMobile(mobile)) {
             $.ajax({
                 type: "GET",
-                url: "../shop-api/verifyCode/getCode?type=1&mobile=" + mobile,
+                url: host+"/verifyCode/getCode?type=1&mobile=" + mobile,
                 dataType: 'json',
                 success: function (data) {
                     console.log(data)
@@ -73,6 +74,7 @@ function isTelOrMobile(telephone) {
 function register() {
     mobile = $(".userName").val();
     var verificationCode = $('.code').val();
+    var inviteCode2 = $('.inviteCode2').val();
     // alert("../shop-api/register/mobile?inviteCode=" + inviteCode + "&mobile=" +
     //   mobile +
     //   "&verificationCode=" + verificationCode);
@@ -80,14 +82,16 @@ function register() {
         undefined && mobile != '' && mobile != null && mobile != undefined) {
         $.ajax({
             type: "GET",
-            url: "../shop-api/register/mobile?inviteCode=" + inviteCode + "&mobile=" +
+            url: host + "/register/mobile?inviteCode=" + inviteCode + "&mobile=" +
                 mobile +
-                "&verificationCode=" + verificationCode,
+                "&verificationCode=" + verificationCode +
+                "&inviteCode2=" + inviteCode2,
             dataType: 'json', // 请求方式为json
             success: function (data) {
                 if (data.code == 200) {
-                    message("恭喜您已成功注册赚赚熊会员", 1);
-                    window.location.href = "downloadApp.html"
+                    message("恭喜您已成功注册橘宝堂会员", 1);
+                    // window.location.href = "downloadApp.html"
+                    window.location.href = document.getElementById('download_app').href;
                 } else {
                     message(data.message, 0);
                 }
@@ -149,7 +153,9 @@ function copy() {
 
 $(document).ready(function () {
     inviteCode = getUrlParam("inviteCode");
-    console.log($("#inviteCode"))
-    $("#inviteCode").html(inviteCode)
-
+    if (inviteCode != null) {
+        console.log($("#inviteCode"))
+        $("#inviteCode").html(inviteCode)
+        $(".colorBtn").show();
+    }
 })
